@@ -14,5 +14,11 @@ stages{
             echo(message: 'Building the docker application')
         }
     }
-}
+     stage('Test'){
+         steps{
+             echo(message: 'Testing the docker application')
+         }
+     }
+        
+    }
 }
