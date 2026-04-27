@@ -6,7 +6,7 @@ stages{
         steps{
             echo(message: 'Cloning the repo')
            git(url: 'https://github.com/krishna-cyber/two-tier-flask-app.git',branch: 'master')
-           sh(script: 'docker compose up -d')
+           sh(script: 'docker compose up -d --build')
         }
     }
 
